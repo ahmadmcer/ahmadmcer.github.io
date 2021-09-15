@@ -1,20 +1,21 @@
-* {
-  font-family: 'Montserrat', sans-serif;
+html {
+  scroll-behavior: smooth;
 }
 
 body {
+  font-family: 'Montserrat', sans-serif;
   margin: 16px;
 }
 
-header {
+nav {
   background-image: linear-gradient(to right, hsl(210, 100%, 50%), hsl(270, 100%, 50%));
-  border-radius: 8px;
+  border-radius: 16px;
   padding: 0 32px;
 }
 
 .nav-left {
   float: left;
-  width: 128px;
+  width: 384px;
 }
 
 .nav-left a {
@@ -23,11 +24,12 @@ header {
   text-decoration: none;
   font-weight: 700;
   color: hsl(0, 100%, 100%);
-  transition: color .5s;
+  margin-right: 16px;
+  transition: color .1s;
 }
 
 .nav-left a:hover {
-  color: hsl(210, 100%, 75%);
+  color: hsl(0, 100%, 0%);
 }
 
 .logo-center {
@@ -40,7 +42,7 @@ header {
 .nav-right {
   float: right;
   text-align: right;
-  width: 128px;
+  width: 384px;
 }
 
 .nav-right a {
@@ -49,9 +51,104 @@ header {
   text-decoration: none;
   font-weight: 700;
   color: hsl(0, 100%, 100%);
-  transition: color .5s;
+  margin-left: 32px;
+  transition: color .1s;
 }
 
 .nav-right a:hover {
-  color: hsl(210, 100%, 75%);
+  color: hsl(0, 100%, 0%);
+}
+
+header {
+  text-align: center;
+  padding-top: 96px;
+  padding-bottom: 192px;
+}
+
+.header-title {
+  font-size: 6em;
+  font-family: 'Inconsolata', monospace;
+}
+
+.header-text {
+  margin-bottom: 48px;
+}
+
+.button-link {
+  background-color: hsl(210, 100%, 50%);
+  color: hsl(0, 100%, 100%);
+  border-radius: 16px;
+  text-decoration: none;
+  padding: 8px 32px;
+  transition: background-color .1s;
+}
+
+.button-link:hover {
+  background-color: hsl(270, 100%, 50%);
+}
+
+section {
+  padding: 32px;
+}
+
+.section-title {
+  background-image: linear-gradient(to right, hsl(210, 100%, 50%), hsl(270, 100%, 50%));
+  color: hsl(0, 100%, 100%);
+  border-radius: 16px;
+  font-size: 1.75em;
+  line-height: 48px;
+  letter-spacing: 4px;
+  text-align: center;
+  margin: 0;
+}
+
+.sub-section {
+  display: inline-block;
+  vertical-align: top;
+  width: 49%;
+}
+
+article {
+  padding: 0 32px;
+  margin-top: 48px;
+}
+
+article p {
+  line-height: 1.5em;
+}
+
+.sub-article {
+  margin-bottom: 32px;
+}
+
+.work-experience h3,
+.work-experience h4,
+.work-experience p {
+  margin: 8px 0;
+}
+
+.work-experience h4 {
+  font-weight: 400;
+}
+
+.work-experience p {
+  color: hsl(0, 0%, 50%);
+}
+
+.download-resume {
+  text-align: center;
+  margin-top: 64px;
+}
+
+footer {
+  background-color: hsl(0, 0%, 50%);
+  color: hsl(0, 100%, 100%);
+  border-radius: 17px;
+  padding: 8px 32px;
+  text-align: center;
+}
+
+footer p {
+  font-size: .9em;
+  margin: 0;
 }
