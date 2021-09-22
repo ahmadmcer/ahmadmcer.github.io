@@ -4,6 +4,7 @@ html {
 
 body {
   font-family: 'Montserrat', sans-serif;
+  color: hsl(0, 0%, 10%);
   margin: 16px;
 }
 
@@ -24,12 +25,11 @@ nav {
   text-decoration: none;
   font-weight: 700;
   color: hsl(0, 100%, 100%);
-  margin-right: 16px;
-  transition: color .1s;
+  transition: .2s;
 }
 
 .nav-left a:hover {
-  color: hsl(0, 100%, 0%);
+  color: hsl(0, 0%, 10%);
 }
 
 .logo-center {
@@ -51,12 +51,11 @@ nav {
   text-decoration: none;
   font-weight: 700;
   color: hsl(0, 100%, 100%);
-  margin-left: 32px;
-  transition: color .1s;
+  transition: .2s;
 }
 
 .nav-right a:hover {
-  color: hsl(0, 100%, 0%);
+  color: hsl(0, 0%, 10%);
 }
 
 header {
@@ -80,7 +79,7 @@ header {
   border-radius: 16px;
   text-decoration: none;
   padding: 8px 32px;
-  transition: background-color .1s;
+  transition: .2s;
 }
 
 .button-link:hover {
@@ -88,7 +87,7 @@ header {
 }
 
 section {
-  padding: 32px;
+  padding: 32px 32px 128px 32px;
 }
 
 .section-title {
@@ -105,7 +104,7 @@ section {
 .sub-section {
   display: inline-block;
   vertical-align: top;
-  width: 49%;
+  width: 44%;
 }
 
 article {
@@ -140,8 +139,51 @@ article p {
   margin-top: 64px;
 }
 
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-item {
+  width: 23%;
+}
+
+.card {
+  border: solid 1px hsl(0, 0%, 90%);
+  border-radius: 16px;
+  margin-bottom: 32px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0 4px 8px 0 hsla(0, 0%, 0%, .2);
+}
+
+.card a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.card-img {
+  width: 100%;
+  border-radius: 16px 16px 0 0;
+}
+
+.card-container {
+  padding: 2px 16px;
+}
+
+.card-container h4,
+.card-container p {
+  margin: 16px 0;
+}
+
+.card-container p {
+  font-size: .9em;
+}
+
 footer {
-  background-color: hsl(0, 0%, 50%);
+  background-color: hsl(0, 0%, 30%);
   color: hsl(0, 100%, 100%);
   border-radius: 17px;
   padding: 8px 32px;
