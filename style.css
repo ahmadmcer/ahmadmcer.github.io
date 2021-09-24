@@ -101,12 +101,6 @@ section {
   margin: 0;
 }
 
-.sub-section {
-  display: inline-block;
-  vertical-align: top;
-  width: 44%;
-}
-
 article {
   padding: 0 32px;
   margin-top: 48px;
@@ -144,7 +138,11 @@ article p {
   justify-content: space-between;
 }
 
-.flex-item {
+.col-2 {
+  width: 50%;
+}
+
+.col-4 {
   width: 23%;
 }
 
