@@ -26,6 +26,10 @@ body {
   background-color: hsl(270, 100%, 50%);
 }
 
+.download-resume {
+  text-align: center;
+}
+
 
 /* Flex */
 .flex-container {
@@ -55,7 +59,7 @@ body {
 
 /* Grid System */
 .container {
-  padding: 32px 0;
+  padding: 32px;
 }
 
 .row::after {
@@ -70,10 +74,6 @@ body {
 }
 
 @media only screen and (min-width: 768px) {
-  .container {
-    padding: 32px;
-  }
-
   .col-1 {
     width: 8.33%;
   }
@@ -151,14 +151,18 @@ nav a:hover {
 
 .nav-logo {
   height: 64px;
+  margin-left: -24px;
   vertical-align: middle;
 }
 
 .dropmenu-icon {
   float: right;
+  margin-right: -32px;
 }
 
 .dropmenu-icon i {
+  width: 64px;
+  text-align: center;
   vertical-align: middle;
 }
 
@@ -203,7 +207,7 @@ nav a:hover {
 /* Header */
 header {
   text-align: center;
-  padding-top: 96px;
+  padding-top: 48px;
   padding-bottom: 192px;
 }
 
@@ -218,6 +222,10 @@ header {
 }
 
 @media only screen and (min-width: 768px) {
+  header {
+    padding-top: 96px;
+  }
+
   .header-title {
     text-align: center;
   }
@@ -226,7 +234,8 @@ header {
 
 /* Section */
 section {
-  padding: 32px 32px 128px 32px;
+  padding-top: 32px;
+  padding-bottom: 128px;
 }
 
 .section-title {
@@ -240,10 +249,16 @@ section {
   margin: 0;
 }
 
+@media only screen and (min-width: 768px) {
+  section {
+    padding: 32px 32px 128px 32px;
+  }
+}
+
 
 /* Article */
 article {
-  margin-bottom: 32px;
+  margin-bottom: 64px;
 }
 
 article p {
@@ -270,11 +285,6 @@ article p {
 
 .sub-article p {
   color: hsl(0, 0%, 50%);
-}
-
-.download-resume {
-  text-align: center;
-  margin-top: 64px;
 }
 
 
