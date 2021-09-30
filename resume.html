@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Resume - Ahmad Nawawi</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+  <style type="text/css">
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      margin: 16px;
+    }
+
+    p {
+      line-height: 1.5em;
+    }
+
+    .flex-container {
+      display: flex;
+    }
+
+    .flex-container > article {
+      width: 50%;
+    }
+
+    header {
+      background-image: linear-gradient(to right, hsl(210, 100%, 50%), hsl(270, 100%, 50%));
+      color: hsl(0, 0%, 100%);
+      text-align: center;
+      border-radius: 16px;
+      padding: 8px 32px;
+    }
+
+    header > h1 {
+      font-weight: 600;
+      margin-top: 0;
+      margin-bottom: 8px;
+    }
+
+    header > h1 > span {
+      font-weight: 400;
+    }
+
+    address {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    address > a {
+      color: inherit;
+      font-style: normal;
+      font-size: .8em;
+      text-decoration: none;
+    }
+
+    section {
+      padding: 32px;
+    }
+
+    article {
+      margin-bottom: 32px;
+    }
+
+    article article {
+      margin-bottom: 0;
+    }
+
+    article > h2 {
+      font-size: 1.5em;
+      margin-top: 0;
+      margin-bottom: .5em;
+    }
+
+    article > h3 {
+      font-size: 1em;
+      margin-top: 0;
+      margin-bottom: .5em;
+    }
+
+    article > p {
+      margin: 0;
+    }
+
+    #summary > p {
+      text-align: justify;
+    }
+
+    #education article > p,
+    #experiences > p {
+      color: hsl(0, 0%, 0%);
+      font-size: 1em;
+      line-height: 1.25em;
+    }
+
+    #education article > p > span,
+    #experiences > p > span {
+      color: hsl(0, 0%, 50%);
+      font-size: .9em;
+    }
+
+    #experiences > ul {
+      padding-left: 1.5em;
+      margin-top: .5em;
+      margin-bottom: 0;
+    }
+
+    #experiences > ul > li {
+      line-height: 1.25em;
+    }
+
+    #courses {
+      margin-bottom: 16px;
+    }
+
+    #courses > .flex-container {
+      flex-wrap: wrap;
+    }
+
+    #courses article {
+      width: 33.33%;
+      margin-bottom: 16px;
+    }
+
+    #courses article > h3 {
+      margin-bottom: 0;
+    }
+
+    #courses article > p {
+      font-size: .9em;
+    }
+
+    footer {
+      position: fixed;
+      bottom: 16px;
+      left: 16px;
+      right: 16px;
+      background-color: hsl(0, 0%, 30%);
+      color: hsl(0, 100%, 100%);
+      text-align: center;
+      border-radius: 16px;
+      padding: 8px;
+    }
+
+    footer > p {
+      font-size: .8em;
+      word-spacing: .25em;
+      margin: 0;
+    }
+
+    footer > p > a {
+      color: inherit;
+      text-decoration: inherit;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Ahmad <span>Nawawi</span></h1>
+    <address>
+      <a href="https://wa.me/6285701803349"><i class="fab fa-whatsapp"></i> +62 857-0180-3349</a>
+      <a href="mailto:ahmadmcer@gmail.com"><i class="fas fa-envelope"></i> ahmadmcer@gmail.com</a>
+      <a href="https://ahmadmcer.github.io/"><i class="fas fa-globe"></i> ahmadmcer.github.io</a>
+      <a href="https://goo.gl/maps/Ha9W9dJXih7ws21XA"><i class="fas fa-map-marker-alt"></i> Brebes, Central Java</a>
+    </address>
+  </header>
+
+  <section>
+    <article id="summary">
+      <h2><i class="fas fa-id-card fa-fw"></i> Summary</h2>
+      <p>A student of the Telkom Purwokerto Institute of Technology in the Software Engineering study program. Experienced in HTML, CSS and JavaScript. Also experienced in Illustration (using Affinity Designer) as a hobby.</p>
+    </article>
+
+    <article id="education">
+      <h2><i class="fas fa-graduation-cap fa-fw"></i> Education</h2>
+      <div class="flex-container">
+        <article>
+          <h3>Telkom Purwokerto Institute of Technology</h3>
+          <p>
+            Bachelor's Degree Software Engineering<br>
+            <span>September 2020 - Present</span>
+          </p>
+        </article>
+        <article>
+          <h3>Telkom Purwokerto Vocational High School</h3>
+          <p>
+            Software Engineering<br>
+            <span>July 2015 - May 2018 (3 years)</span>
+          </p>
+        </article>
+      </div>
+    </article>
+
+    <article id="skills">
+      <h2><i class="fas fa-scroll fa-fw"></i> Skills</h2>
+      <div class="flex-container">
+        <article>
+          <h3>Languages:</h3>
+          <p>HTML, CSS, JavaScript, SQL, Java</p>
+        </article>
+        <article>
+          <h3>Technologies:</h3>
+          <p>React JS, Git</p>
+        </article>
+      </div>
+    </article>
+
+    <article id="courses">
+      <h2><i class="fas fa-pencil-ruler fa-fw"></i> Courses</h2>
+      <div class="flex-container">
+        <article>
+          <h3>React Js Web Frontend</h3>
+          <p>SanberCode (June - July 2021)</p>
+        </article>
+        <article>
+          <h3>React</h3>
+          <p>Progate (June 2021)</p>
+        </article>
+        <article>
+          <h3>Java</h3>
+          <p>Progate (June 2021)</p>
+        </article>
+        <article>
+          <h3>Git</h3>
+          <p>Progate (March 2021)</p>
+        </article>
+        <article>
+          <h3>Command Line</h3>
+          <p>Progate (Januari 2021)</p>
+        </article>
+        <article>
+          <h3>SQL</h3>
+          <p>Progate (Desember 2021)</p>
+        </article>
+        <article>
+          <h3>JavaScript</h3>
+          <p>Progate (Desember 2021)</p>
+        </article>
+        <article>
+          <h3>HTML & CSS</h3>
+          <p>Progate (Desember 2021)</p>
+        </article>
+      </div>
+    </article>
+
+    <article id="experiences">
+      <h2><i class="fas fa-briefcase fa-fw"></i> Experiences</h2>
+      <h3>Information Technology Division Administrative Staff</h3>
+      <p>
+        MA Plus Al Bukhori | Brebes, Central Java<br>
+        <span>August 2018 - April 2020 (2 years)<br></span>
+      </p>
+      <ul>
+        <li>Create a school website and be responsible for its maintenance.</li>
+        <li>Participate in the committee of Computer Based Exams.</li>
+        <li>Responsible for the maintenance of technology-based office equipment (such as computers and printers).</li>
+      </ul>
+    </article>
+  </section>
+
+  <footer>
+    <p>
+      <a href="https://ahmadmcer.github.io/resume.html"><i class="fas fa-code"></i> <i class="fab fa-html5 fa-lg"></i> <i class="fab fa-css3-alt fa-lg"></i> with <i class="fas fa-heart"></i></a>
+    </p>
+  </footer>
+</body>
+</html>
