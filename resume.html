@@ -28,7 +28,7 @@
       display: flex;
     }
 
-    .flex-container > article {
+    .flex-container > section {
       width: 50%;
     }
 
@@ -70,8 +70,8 @@
       margin-bottom: 32px;
     }
 
-    article article {
-      margin-bottom: 0;
+    article section {
+      padding: 0;
     }
 
     article > h2 {
@@ -80,13 +80,13 @@
       margin-bottom: .5em;
     }
 
-    article > h3 {
+    section > h3 {
       font-size: 1em;
       margin-top: 0;
       margin-bottom: .5em;
     }
 
-    article > p {
+    article p {
       margin: 0;
     }
 
@@ -94,14 +94,14 @@
       text-align: justify;
     }
 
-    #education article > p,
+    #education section > p,
     #experiences > p {
       color: hsl(0, 0%, 0%);
       font-size: 1em;
       line-height: 1.25em;
     }
 
-    #education article > p > span,
+    #education section > p > span,
     #experiences > p > span {
       color: hsl(0, 0%, 50%);
       font-size: .9em;
@@ -125,16 +125,16 @@
       flex-wrap: wrap;
     }
 
-    #courses article {
+    #courses section {
       width: 33.33%;
       margin-bottom: 16px;
     }
 
-    #courses article > h3 {
+    #courses section > h3 {
       margin-bottom: 0;
     }
 
-    #courses article > p {
+    #courses section > p {
       font-size: .9em;
     }
 
@@ -182,72 +182,72 @@
     <article id="education">
       <h2><i class="fas fa-graduation-cap fa-fw"></i> Education</h2>
       <div class="flex-container">
-        <article>
+        <section>
           <h3>Telkom Purwokerto Institute of Technology</h3>
           <p>
             Bachelor's Degree Software Engineering<br>
             <span>September 2020 - Present</span>
           </p>
-        </article>
-        <article>
+        </section>
+        <section>
           <h3>Telkom Purwokerto Vocational High School</h3>
           <p>
             Software Engineering<br>
             <span>July 2015 - May 2018 (3 years)</span>
           </p>
-        </article>
+        </section>
       </div>
     </article>
 
     <article id="skills">
       <h2><i class="fas fa-scroll fa-fw"></i> Skills</h2>
       <div class="flex-container">
-        <article>
+        <section>
           <h3>Languages:</h3>
           <p>HTML, CSS, JavaScript, SQL, Java</p>
-        </article>
-        <article>
+        </section>
+        <section>
           <h3>Technologies:</h3>
           <p>React JS, Git</p>
-        </article>
+        </section>
       </div>
     </article>
 
     <article id="courses">
       <h2><i class="fas fa-pencil-ruler fa-fw"></i> Courses</h2>
       <div class="flex-container">
-        <article>
+        <section>
           <h3>React Js Web Frontend</h3>
           <p>SanberCode (June - July 2021)</p>
-        </article>
-        <article>
+        </section>
+        <section>
           <h3>React</h3>
           <p>Progate (June 2021)</p>
-        </article>
-        <article>
+        </section>
+        <section>
           <h3>Java</h3>
           <p>Progate (June 2021)</p>
-        </article>
-        <article>
+        </section>
+        <section>
           <h3>Git</h3>
           <p>Progate (March 2021)</p>
-        </article>
-        <article>
+        </section>
+        <section>
           <h3>Command Line</h3>
           <p>Progate (Januari 2021)</p>
-        </article>
-        <article>
+        </section>
+        <section>
           <h3>SQL</h3>
           <p>Progate (Desember 2021)</p>
-        </article>
-        <article>
+        </section>
+        <section>
           <h3>JavaScript</h3>
           <p>Progate (Desember 2021)</p>
-        </article>
-        <article>
+        </section>
+        <section>
           <h3>HTML & CSS</h3>
           <p>Progate (Desember 2021)</p>
-        </article>
+        </section>
       </div>
     </article>
 
@@ -256,7 +256,7 @@
       <h3>Information Technology Division Administrative Staff</h3>
       <p>
         MA Plus Al Bukhori | Brebes, Central Java<br>
-        <span>August 2018 - April 2020 (2 years)<br></span>
+        <span>August 2018 - April 2020 (2 years)</span>
       </p>
       <ul>
         <li>Create a school website and be responsible for its maintenance.</li>

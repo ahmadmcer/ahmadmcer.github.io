@@ -26,8 +26,9 @@ body {
   background-color: hsl(270, 100%, 50%);
 }
 
-.download-resume {
+#download-resume {
   text-align: center;
+  margin-top: 32px;
 }
 
 
@@ -46,8 +47,8 @@ body {
   flex-wrap: wrap;
 }
 
-.flex-no-justify {
-  justify-content: flex-start;
+.flex-center {
+  justify-content: center;
 }
 
 @media only screen and (min-width: 768px) {
@@ -211,22 +212,23 @@ header {
   padding-bottom: 192px;
 }
 
-.header-title {
+header > h1 {
   font-size: 6em;
   font-family: 'Inconsolata', monospace;
   text-align: left;
 }
 
-.header-text {
+header > p {
   margin-bottom: 48px;
 }
 
 @media only screen and (min-width: 768px) {
   header {
     padding-top: 96px;
+    margin: 0 32px;
   }
 
-  .header-title {
+  header > h1 {
     text-align: center;
   }
 }
@@ -234,11 +236,10 @@ header {
 
 /* Section */
 section {
-  padding-top: 32px;
   padding-bottom: 128px;
 }
 
-.section-title {
+section > h1 {
   background-image: linear-gradient(to right, hsl(210, 100%, 50%), hsl(270, 100%, 50%));
   color: hsl(0, 100%, 100%);
   border-radius: 16px;
@@ -251,40 +252,70 @@ section {
 
 @media only screen and (min-width: 768px) {
   section {
-    padding: 32px 32px 128px 32px;
+    margin: 0 32px;
   }
 }
 
 
 /* Article */
 article {
-  margin-bottom: 64px;
-}
-
-article p {
-  line-height: 1.5em;
-}
-
-.article-title {
-  margin-top: 0;
-}
-
-.sub-article {
   margin-bottom: 32px;
 }
 
-.sub-article h3,
-.sub-article h4,
-.sub-article p {
-  margin: 8px 0;
+article > h2 {
+  margin-top: 0;
+  margin-bottom: .5em;
 }
 
-.sub-article h4 {
-  font-weight: 400;
+article p,
+article > ul > li > ul > li {
+  line-height: 1.5em;
 }
 
-.sub-article p {
+article section {
+  padding-bottom: 0;
+  margin: 0 0 16px 0;
+}
+
+article > ul {
+  list-style-type: none;
+  border-left: solid 4px hsl(0, 0%, 10%);
+  padding-left: 12px;
+  padding-right: 20px;
+  margin: 0 0 32px 4px;
+}
+
+article > ul > li {
+  margin-bottom: 32px;
+}
+
+article section > h3,
+article section > p,
+article > ul > li > h3,
+article > ul > li > p {
+  margin-top: 0;
+  margin-bottom: .5em;
+}
+
+article > ul > li > p > span {
   color: hsl(0, 0%, 50%);
+  font-size: .9em;
+}
+
+article > ul > li > ul {
+  list-style-type: disc;
+  padding-left: 18px;
+}
+
+#skills {
+  margin-bottom: 16px;
+}
+
+@media only screen and (min-width: 768px) {
+  article section {
+    width: 33.33%;
+    margin-right: 32px;
+  }
 }
 
 
