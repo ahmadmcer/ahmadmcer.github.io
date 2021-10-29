@@ -1,13 +1,13 @@
 var hidden = true;
 
 function dropMenu() {
-  var id = document.getElementById('dropMenu');
+  var id = document.getElementById('nav');
 
   if (hidden) {
-    id.style.display = 'block';
+    id.style.height = 'auto';
     hidden = false;
   } else {
-    id.style.display = 'none';
+    id.style.height = '64px';
     hidden = true;
   }
 }
