@@ -148,6 +148,12 @@ header {
   padding-bottom: 192px;
 }
 
+header img {
+  border: 8px solid var(--black);
+  border-radius: 100%;
+  width: 16em;
+}
+
 header h1 {
   font-size: 6em;
   font-family: 'Roboto Mono', monospace;

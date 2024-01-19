@@ -32,6 +32,12 @@
       width: 50%;
     }
 
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 16px;
+    }
+
     header {
       background-image: linear-gradient(to right, hsl(210, 100%, 50%), hsl(270, 100%, 50%));
       color: hsl(0, 0%, 100%);
@@ -80,6 +86,12 @@
       margin-bottom: .5em;
     }
 
+    article > h3 {
+      font-size: 1.2em;
+      margin-top: 0;
+      margin-bottom: .5em;
+    }
+
     section > h3 {
       font-size: 1em;
       margin-top: 0;
@@ -121,15 +133,6 @@
       margin-bottom: 16px;
     }
 
-    #courses > .flex-container {
-      flex-wrap: wrap;
-    }
-
-    #courses section {
-      width: 33.33%;
-      margin-bottom: 16px;
-    }
-
     #courses section > h3 {
       margin-bottom: 0;
     }
@@ -167,7 +170,7 @@
     <h1>Ahmad <span>Nawawi</span></h1>
     <address>
       <a href="https://wa.me/6285701803349"><i class="fab fa-whatsapp"></i> +62 857-0180-3349</a>
-      <a href="mailto:ahmadmcer@gmail.com"><i class="fas fa-envelope"></i> ahmadmcer@gmail.com</a>
+      <a href="mailto:20104009@ittelkom-pwt.ac.id"><i class="fas fa-envelope"></i> 20104009@ittelkom-pwt.ac.id</a>
       <a href="https://ahmadmcer.github.io/"><i class="fas fa-globe"></i> ahmadmcer.github.io</a>
       <a href="https://goo.gl/maps/Ha9W9dJXih7ws21XA"><i class="fas fa-map-marker-alt"></i> Brebes, Central Java</a>
     </address>
@@ -175,100 +178,108 @@
 
   <section>
     <article id="summary">
-      <h2><i class="fas fa-id-card fa-fw"></i> Summary</h2>
-      <p>A student of the Telkom Purwokerto Institute of Technology in the Software Engineering study program. Experienced in HTML, CSS and JavaScript. Also experienced in Illustration (using Affinity Designer) as a hobby.</p>
+      <h2><i class="fas fa-id-card fa-fw"></i> Tentang Saya</h2>
+      <p>
+        Saya adalah mahasiswa program studi S1 Rekayasa Perangkat Lunak di Institut Teknologi Telkom Purwokerto. 
+        Berpengalaman dalam HTML, CSS, dan JavaScript. Cita-cita saya adalah menjadi Full Stack Web Developer dan 
+        mendirikan organisasi pelatihan coding demi meningkatkan mutu sumber daya manusia di kota saya.
+      </p>
+    </article>
+
+    <article id="experiences">
+      <h2><i class="fas fa-briefcase fa-fw"></i> Pengalaman</h2>
+      <h3>Staf Divisi Pendidikan dan Pengembangan</h3>
+      <p>
+        Himpunan Mahasiswa Software Engineering (HMSE) | Purwokerto, Jawa Tengah<br>
+        <span>Januari 2022 - Mei 2022</span>
+      </p>
+      <ul>
+        <li>Menyukseskan acara Pelatihan TOEFL sebagai PIC (Person In Charge).</li>
+        <li>Ikut serta mewakili HMSE dalam acara Innovation Days yang diadakan BEM ITTP.</li>
+        <li>Ikut serta bertanggung jawab dalam meningkatkan prestasi akademis mahasiswa Software Engineering.</li>
+      </ul>
     </article>
 
     <article id="education">
-      <h2><i class="fas fa-graduation-cap fa-fw"></i> Education</h2>
-      <div class="flex-container">
+      <h2><i class="fas fa-graduation-cap fa-fw"></i> Pendidikan</h2>
+      <div class="grid-container">
         <section>
-          <h3>Telkom Purwokerto Institute of Technology</h3>
+          <h3>Institut Teknologi Telkom Purwokerto</h3>
           <p>
-            Bachelor's Degree Software Engineering<br>
-            <span>September 2020 - Present</span>
+            S1 Software Engineering<br>
+            <span>September 2020 - sekarang</span>
           </p>
         </section>
         <section>
-          <h3>Telkom Purwokerto Vocational High School</h3>
+          <h3>SMK Telkom Purwokerto</h3>
           <p>
-            Software Engineering<br>
-            <span>July 2015 - May 2018 (3 years)</span>
+            Rekayasa Perangkat Lunak<br>
+            <span>Juli 2015 - Mei 2018 (3 tahun)</span>
           </p>
         </section>
       </div>
     </article>
 
     <article id="skills">
-      <h2><i class="fas fa-scroll fa-fw"></i> Skills</h2>
-      <div class="flex-container">
+      <h2><i class="fas fa-scroll fa-fw"></i> Keahlian</h2>
+      <div class="grid-container">
         <section>
-          <h3>Languages:</h3>
+          <h3>Bahasa:</h3>
           <p>HTML, CSS, JavaScript, SQL, Java</p>
         </section>
         <section>
-          <h3>Technologies:</h3>
+          <h3>Teknologi:</h3>
           <p>React JS, Git</p>
         </section>
       </div>
     </article>
 
     <article id="courses">
-      <h2><i class="fas fa-pencil-ruler fa-fw"></i> Courses</h2>
-      <div class="flex-container">
+      <h2><i class="fas fa-pencil-ruler fa-fw"></i> Pelatihan</h2>
+      <div class="grid-container">
+        <section>
+          <h3>Belajar Fundamental Aplikasi Web dengan React</h3>
+          <p>Dicoding Indonesia (Desember 2022)</p>
+        </section>
+        <section>
+          <h3>Belajar Membuat Aplikasi Web dengan React</h3>
+          <p>Dicoding Indonesia (Desember 2022)</p>
+        </section>
+        <section>
+          <h3>Belajar Fundamental Front-End Web Development</h3>
+          <p>Dicoding Indonesia (November 2022)</p>
+        </section>
+        <section>
+          <h3>Belajar Membuat Front-End Web untuk Pemula</h3>
+          <p>Dicoding Indonesia (Oktober 2022)</p>
+        </section>
+        <section>
+          <h3>Belajar Dasar Pemrograman Web</h3>
+          <p>Dicoding Indonesia (September 2022)</p>
+        </section>
+        <section>
+          <h3>Belajar Dasar Git dengan GitHub</h3>
+          <p>Dicoding Indonesia (September 2022)</p>
+        </section>
+        <section>
+          <h3>Memulai Dasar Pemrograman untuk Menjadi Pengembang Software</h3>
+          <p>Dicoding Indonesia (September 2022)</p>
+        </section>
+        <section>
+          <h3>Pengenalan ke Logika Pemrograman (Programming Logic 101)</h3>
+          <p>Dicoding Indonesia (Agustus 2022)</p>
+        </section>
         <section>
           <h3>React Js Web Frontend</h3>
-          <p>SanberCode (June - July 2021)</p>
-        </section>
-        <section>
-          <h3>React</h3>
-          <p>Progate (June 2021)</p>
-        </section>
-        <section>
-          <h3>Java</h3>
-          <p>Progate (June 2021)</p>
-        </section>
-        <section>
-          <h3>Git</h3>
-          <p>Progate (March 2021)</p>
-        </section>
-        <section>
-          <h3>Command Line</h3>
-          <p>Progate (Januari 2021)</p>
-        </section>
-        <section>
-          <h3>SQL</h3>
-          <p>Progate (Desember 2021)</p>
-        </section>
-        <section>
-          <h3>JavaScript</h3>
-          <p>Progate (Desember 2021)</p>
-        </section>
-        <section>
-          <h3>HTML & CSS</h3>
-          <p>Progate (Desember 2021)</p>
+          <p>SanberCode (Juli 2021)</p>
         </section>
       </div>
-    </article>
-
-    <article id="experiences">
-      <h2><i class="fas fa-briefcase fa-fw"></i> Experiences</h2>
-      <h3>Information Technology Division Administrative Staff</h3>
-      <p>
-        MA Plus Al Bukhori | Brebes, Central Java<br>
-        <span>August 2018 - April 2020 (2 years)</span>
-      </p>
-      <ul>
-        <li>Create a school website and be responsible for its maintenance.</li>
-        <li>Participate in the committee of Computer Based Exams.</li>
-        <li>Responsible for the maintenance of technology-based office equipment (such as computers and printers).</li>
-      </ul>
     </article>
   </section>
 
   <footer>
     <p>
-      <a href="https://ahmadmcer.github.io/resume"><i class="fas fa-code"></i> <i class="fab fa-html5 fa-lg"></i> <i class="fab fa-css3-alt fa-lg"></i> with <i class="fas fa-heart"></i></a>
+      <a href="https://ahmadmcer.github.io/resume"><i class="fas fa-code"></i> with <i class="fab fa-html5 fa-lg"></i> <i class="fab fa-css3-alt fa-lg"></i> by <i class="fas fa-heart"></i></a>
     </p>
   </footer>
 </body>

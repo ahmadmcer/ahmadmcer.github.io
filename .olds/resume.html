@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Resume - Ahmad Nawawi</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+  <style type="text/css">
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      margin: 16px;
+    }
+
+    p {
+      line-height: 1.5em;
+    }
+
+    .flex-container {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .flex-wrap {
+      flex-wrap: wrap;
+    }
+
+    .flex-container > section {
+      width: calc(50% - 8px);
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 16px;
+    }
+
+    header {
+      background-image: linear-gradient(to left, hsl(240, 100%, 70%), hsl(240, 100%, 30%));
+      color: hsl(0, 0%, 100%);
+      text-align: center;
+      border-radius: 16px;
+      padding: 8px 32px;
+    }
+
+    header > h1 {
+      font-weight: 600;
+      margin-top: 0;
+      margin-bottom: 8px;
+    }
+
+    header > h1 > span {
+      font-weight: 400;
+    }
+
+    address {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    address > a {
+      color: inherit;
+      font-style: normal;
+      font-size: .8em;
+      text-decoration: none;
+    }
+
+    section {
+      padding: 32px;
+    }
+
+    article {
+      margin-bottom: 32px;
+    }
+
+    article section {
+      padding: 0;
+    }
+
+    article > h2 {
+      font-size: 1.5em;
+      margin-top: 0;
+      margin-bottom: .5em;
+    }
+
+    article > h3 {
+      font-size: 1.2em;
+      margin-top: 0;
+      margin-bottom: .25em;
+    }
+
+    section > h3 {
+      font-size: 1em;
+      margin: 0;
+    }
+
+    article p {
+      margin: 0;
+    }
+
+    #summary > p {
+      text-align: justify;
+    }
+
+    #education section > p,
+    #experiences > p {
+      color: hsl(0, 0%, 0%);
+      font-size: 1em;
+      line-height: 1.25em;
+    }
+
+    #education section > p > span,
+    #experiences section > p > span {
+      color: hsl(0, 0%, 50%);
+      font-size: .9em;
+    }
+
+    #experiences section {
+      margin-bottom: 1em;
+    }
+
+    #experiences > ul {
+      padding-left: 1.5em;
+      margin-top: .5em;
+      margin-bottom: 0;
+    }
+
+    #experiences > ul > li {
+      line-height: 1.25em;
+    }
+
+    #courses {
+      margin-bottom: 16px;
+    }
+
+    #courses section > h3 {
+      margin-bottom: 0;
+    }
+
+    #courses section > p {
+      font-size: .9em;
+    }
+
+    footer {
+      position: fixed;
+      bottom: 16px;
+      left: 16px;
+      right: 16px;
+      background-color: hsl(0, 0%, 30%);
+      color: hsl(0, 100%, 100%);
+      text-align: center;
+      border-radius: 16px;
+      padding: 8px;
+    }
+
+    footer > p {
+      font-size: .8em;
+      word-spacing: .25em;
+      margin: 0;
+    }
+
+    footer > p > a {
+      color: inherit;
+      text-decoration: inherit;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Dicky <span>Sulayman Harindratama</span></h1>
+    <address>
+      <a href="https://wa.me/6287733115445"><i class="fab fa-whatsapp"></i> +62 877-3311-5445</a>
+      <a href="mailto:21104014@ittelkom-pwt.ac.id"><i class="fas fa-envelope"></i> 21104014@ittelkom-pwt.ac.id</a>
+      <a href="https://www.instagram.com/dicky_sulayman/"><i class="fab fa-instagram"></i> dicky_sulayman</a>
+      <a href="https://goo.gl/maps/5Q225PUdBXfqrpqKA"><i class="fas fa-map-marker-alt"></i> Cilacap, Jawa Tengah</a>
+    </address>
+  </header>
+
+  <section>
+    <article id="summary">
+      <h2><i class="fas fa-id-card fa-fw"></i> Tentang Saya</h2>
+      <p>
+        Saya adalah mahasiswa program studi S1 Rekayasa Perangkat Lunak di Institut Teknologi Telkom Purwokerto. 
+        Berpengalaman dalam Desain Ilustrasi Logo dan Poster. Cita-cita saya adalah menjadi pebisnis di bidang teknologi informasi yang berguna dan
+        bermanfaat bagi masyarakat.
+      </p>
+    </article>
+
+    <article id="education">
+      <h2><i class="fas fa-graduation-cap fa-fw"></i> Pendidikan</h2>
+      <div class="grid-container">
+        <section>
+          <h3>Institut Teknologi Telkom Purwokerto</h3>
+          <p>
+            S1 Software Engineering<br>
+            <span>September 2021 - sekarang</span>
+          </p>
+        </section>
+        <section>
+          <h3>SMA Negeri 1 Cilacap</h3>
+          <p>
+            Ilmu Pengetahuan Sosial<br>
+            <span>Juli 2018 - Mei 2021 (3 tahun)</span>
+          </p>
+        </section>
+      </div>
+    </article>
+
+    <article id="experiences">
+      <h2><i class="fas fa-briefcase fa-fw"></i> Pengalaman</h2>
+      <div class="flex-container flex-wrap">
+        <section>
+          <h3>Ketua</h3>
+          <p>
+            Himpunan Mahasiswa Software Engineering, Institut Teknologi Telkom Purwokerto<br>
+            <span>Juli 2023 - sekarang</span>
+          </p>
+        </section>
+        <section>
+          <h3>Staf Departemen Media dan Informasi</h3>
+          <p>
+            Himpunan Mahasiswa Software Engineering, Institut Teknologi Telkom Purwokerto<br>
+            <span>Juli 2022 - Juli 2023</span>
+          </p>
+        </section>
+        <section>
+          <h3>Komite Divisi Desain</h3>
+          <p>
+            Campus Cilacap Fair<br>
+            <span>Agustus 2021 - Februari 2022</span>
+          </p>
+        </section>
+        <section>
+          <h3>Ketua</h3>
+          <p>
+            Ikatan Remaja Masjid Al-Karim<br>
+            <span>Januari 2020 - Januari 2022</span>
+          </p>
+        </section>
+        <section>
+          <h3>Ketua Divisi Informasi dan Teknologi</h3>
+          <p>
+            Remaja Islam Masjid Al-Kautsar,<br>SMA Negeri 1 Cilacap<br>
+            <span>Oktober 2019 - Oktober 2020</span>
+          </p>
+        </section>
+        <section>
+          <h3>Seksi 1 Spiritual</h3>
+          <p>
+            Organisasi Siswa Intra Sekolah Atajaya,<br>SMA Negeri 1 Cilacap<br>
+            <span>November 2019 - November 2020</span>
+          </p>
+        </section>
+        <section>
+          <h3>Sub-Seksi Teknik Komputer Jaringan</h3>
+          <p>
+            Organisasi Siswa Intra Sekolah Atajaya,<br>SMA Negeri 1 Cilacap<br>
+            <span>November 2018 - November 2019</span>
+          </p>
+        </section>
+      </div>
+      <!-- <ul>
+        <li>Menyukseskan acara Pelatihan TOEFL sebagai PIC (Person In Charge).</li>
+        <li>Ikut serta mewakili HMSE dalam acara Innovation Days yang diadakan BEM ITTP.</li>
+        <li>Ikut serta bertanggung jawab dalam meningkatkan prestasi akademis mahasiswa Software Engineering.</li>
+      </ul> -->
+    </article>
+
+    <article id="skills">
+      <h2><i class="fas fa-scroll fa-fw"></i> Keahlian</h2>
+      <div class="grid-container">
+        <section>
+          <h3>Bidang:</h3>
+          <p>Desain Ilustrasi, Desain Logo, Desain Poster, Organisasi</p>
+        </section>
+        <section>
+          <h3>Teknologi:</h3>
+          <p>Corel Draw, Figma, PowerPoint, PhotoShop, Premier, Excel</p>
+        </section>
+      </div>
+    </article>
+
+    <!-- <article id="courses">
+      <h2><i class="fas fa-pencil-ruler fa-fw"></i> Pelatihan</h2>
+      <div class="grid-container">
+        <section>
+          <h3>Belajar Fundamental Aplikasi Web dengan React</h3>
+          <p>Dicoding Indonesia (Desember 2022)</p>
+        </section>
+        <section>
+          <h3>Belajar Membuat Aplikasi Web dengan React</h3>
+          <p>Dicoding Indonesia (Desember 2022)</p>
+        </section>
+        <section>
+          <h3>Belajar Fundamental Front-End Web Development</h3>
+          <p>Dicoding Indonesia (November 2022)</p>
+        </section>
+        <section>
+          <h3>Belajar Membuat Front-End Web untuk Pemula</h3>
+          <p>Dicoding Indonesia (Oktober 2022)</p>
+        </section>
+        <section>
+          <h3>Belajar Dasar Pemrograman Web</h3>
+          <p>Dicoding Indonesia (September 2022)</p>
+        </section>
+        <section>
+          <h3>Belajar Dasar Git dengan GitHub</h3>
+          <p>Dicoding Indonesia (September 2022)</p>
+        </section>
+        <section>
+          <h3>Memulai Dasar Pemrograman untuk Menjadi Pengembang Software</h3>
+          <p>Dicoding Indonesia (September 2022)</p>
+        </section>
+        <section>
+          <h3>Pengenalan ke Logika Pemrograman (Programming Logic 101)</h3>
+          <p>Dicoding Indonesia (Agustus 2022)</p>
+        </section>
+        <section>
+          <h3>React Js Web Frontend</h3>
+          <p>SanberCode (Juli 2021)</p>
+        </section>
+      </div>
+    </article> -->
+  </section>
+
+  <footer>
+    <p>
+      <a href="https://ahmadmcer.github.io/resume"><i class="fas fa-code"></i> with <i class="fab fa-html5 fa-lg"></i> <i class="fab fa-css3-alt fa-lg"></i> by <i class="fas fa-heart"></i></a>
+    </p>
+  </footer>
+</body>
+</html>
